@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context=".ui.SeriesListActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_fave_tv_shows"
+        android:textSize="24sp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/white"
+        android:background="#30000000"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:indeterminateTint="@color/teal_200"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_weight="1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="center"
+        android:id="@+id/rvSeriesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="18dp"
+        tools:listitem="@layout/item_series"
+        tools:scrollbars="vertical"
+        app:spanCount="3">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
