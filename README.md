@@ -1,3 +1,3 @@
-#TV Show App
+# TV Show App
 
 ![](./output.gif)
